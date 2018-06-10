@@ -42,17 +42,17 @@ For Lubuntu 16.04 (has tmux 2.1)
 - [Increase scrollback buffer size](https://stackoverflow.com/questions/18760281/how-to-increase-scrollback-buffer-size-in-tmux)
 
 - Tmux resurrect - Restore tmux environment after system restart.
-..- bash
-..- tmux 1.9 or higher
+.. - bash
+.. - tmux 1.9 or higher
 
 Config details
 - [Restoring vim and neovim sessions](https://github.com/tmux-plugins/tmux-resurrect/blob/master/docs/restoring_vim_and_neovim_sessions.md)
 - [restoring pane contents](https://github.com/tmux-plugins/tmux-resurrect/blob/master/docs/restoring_pane_contents.md) (experimental)
 
 - tmux-continuum - automatic restoring and continuous saving of tmux env
-..- bash
-    ..-tmux 1.9 or higher,
-    ..- tmux-resurrect plugin
+.. - bash
+    .. -tmux 1.9 or higher,
+    .. - tmux-resurrect plugin
 
 Config details
 - [continuum status in tmux status line](https://github.com/tmux-plugins/tmux-continuum/blob/master/docs/continuum_status.md)
@@ -63,4 +63,4 @@ Lubuntu 14.04
  - tmux 1.9
 
 Lubuntu 16.04
-..- tmux 2.1
+.. - tmux 2.1
