@@ -16,11 +16,12 @@ HISTCONTROL=ignoreboth
 shopt -s histappend
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-# Opcion cambiada por Jesus Guevara 24-03-2016
 HISTSIZE=100000
-HISTFILESIZE=100000
+HISTFILESIZE=200000
 
-# Opcion añadida por Jesus Guevara 24-03-2016
+# We want to have bash immediately add commands to our history instead of
+# waiting for the end of each session (to enable commands in one terminal
+# to be instantly be available in another
 export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
 
 # check the window size after each command and, if necessary,
@@ -41,7 +42,7 @@ fi
 
 # set a fancy prompt (non-color, unless we know we "want" color)
 case "$TERM" in
-    xterm-color) color_prompt=yes;;
+    xterm-color|*-256color) color_prompt=yes;;
 esac
 
 # uncomment for a colored prompt, if the terminal has the capability; turned
@@ -88,6 +89,9 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
+# colored GCC warnings and errors
+#export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
+
 # some more ls aliases
 alias ll='ls -alF'
 alias la='ls -A'
@@ -116,14 +120,3 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-
-# Historial de Revisiones
-# Este archivo contiene modifificaciones hechas por mi, Jesus Guevara
-# Fecha de primera modificacion: 24-03-2016
-# Fecha de modificacion: 24-03-2016
-# Fecha de ultima modificacion: 24-03-2016
-# Referencias, fuentes, documentacion, basado en el libro:
-# Linux System Administration Recipes, A problem-Solution Aprroach
-# by Juliet Kemp, Apress, 2009, pagina 2
-# Ubicacion de este archivo
-# ASUSX750JB-DB71 Ubuntu 14.04.4 LTS trusty

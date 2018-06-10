@@ -23,9 +23,6 @@ Plugin 'TextFormat'
 " Plugin 'mhinz/vim-startify'
 Plugin 'tpope/vim-obsession'
 
-
-
-
 " Put your non-Plugin stuff after this line
 
 " All of your Plugins must be added before the following line
