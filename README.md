@@ -16,8 +16,8 @@ Use branch lubuntu1404 wich uses Tundle as tmux plugin manager due tmux 1.9 requ
 Aditional and detailled info about requermiments and configuration (TL;DR)    
 
 #### Tmux (#tmux)
-  * Config details, enabled options, tweaked settigns      
-  - [Increased scrollback buffer size](https://stackoverflow.com/questions/18760281/how-to-increase-scrollback-buffer-size-in-tmux)
+* Config details, enabled options, tweaked settings      
+- [Increased scrollback buffer size](https://stackoverflow.com/questions/18760281/how-to-increase-scrollback-buffer-size-in-tmux)
 
 * Tmux Plugin Manger (TPM)
   * Requeriments
@@ -29,11 +29,6 @@ Aditional and detailled info about requermiments and configuration (TL;DR)
   * Requirements
     - bash
     - tmux 1.9 or higher
-
-* tmux-copycat: A plugin that enhances tmux search 
-    * Config details, enabled options, tweaked settigns
-    - `tmux.conf` file has been configured for [manual installation of tmux-copycat plugin as required for tmux 2.3 and earlier versions](https://github.com/tmux-plugins/tmux-copycat/blob/master/docs/installation_for_tmux_2.3.md for Lubuntu 16.04 (which has tmux 2.1) . 
-    - [Increased scrollback buffer size](https://stackoverflow.com/questions/18760281/how-to-increase-scrollback-buffer-size-in-tmux)
 
 Config details
 - [Restoring vim and neovim sessions](https://github.com/tmux-plugins/tmux-resurrect/blob/master/docs/restoring_vim_and_neovim_sessions.md)
@@ -50,7 +45,7 @@ Config details
 
 * tmux-copycat: A plugin that enhances tmux search 
     * Config details, enabled options, tweaked settings
-    - `tmux.conf` file has been configured for manual installation of tmux-copycat plugin as required for tmux 2.3 and earlier versions(https://github.com/tmux-plugins/tmux-copycat/blob/master/docs/installation)_for_tmux_2.3.md for Lubuntu 16.04 (which has tmux 2.1.
+    - `tmux.conf` file has been configured for manual installation of tmux-copycat plugin as required for tmux 2.3 and earlier versions (https://github.com/tmux-plugins/tmux-copycat/blob/master/docs/installation)_for_tmux_2.3.md for Lubuntu 16.04 (which has tmux 2.1.
     - [Increased scrollback buffer size](#tmux)
 
 ### Who has that versions
