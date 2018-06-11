@@ -61,10 +61,13 @@ Lubuntu 16.04
 - tmux 2.1
 
 Futher reading
+
 We follow this approach:
-[How To Use Git to Manage your User Configuration Files on a Linux VPS | DigitalOcean[(https://www.digitalocean.com/community/tutorials/how-to-use-git-to-manage-your-user-configuration-files-on-a-linux-vps)
+
+[How To Use Git to Manage your User Configuration Files on a Linux VPS | DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-use-git-to-manage-your-user-configuration-files-on-a-linux-vps)
 
 Additional sources:
+
 [The best way to store your dotfiles: A bare Git repository - Atlassian Developers](https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/)
 
 [Using Git and Github to Manage Your Dotfiles – the smalley creative blog](http://blog.smalleycreative.com/tutorials/using-git-and-github-to-manage-your-dotfiles/)
@@ -72,4 +75,5 @@ Additional sources:
 [Getting started with dotfiles – Lars Kappert – Medium](https://medium.com/@webprolific/getting-started-with-dotfiles-43c3602fd789)
 
 More extensive compilation:
-[GitHub does dotfiles - dotfiles.github.io, Your unofficial guide to dotfiles on GitHub]( https://dotfiles.github.io/)
+
+[GitHub does dotfiles - dotfiles.github.io, Your unofficial guide to dotfiles on GitHub](https://dotfiles.github.io/)
