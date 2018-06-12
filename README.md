@@ -3,6 +3,16 @@
 
 Tested and working on Linux and Cygwin.
 
+
+<!-- vim-markdown-toc GFM -->
+
+* [Requeriments:](#requeriments)
+* [Installed plugins and config details](#installed-plugins-and-config-details)
+    * [Tmux (#tmux)](#tmux-tmux)
+* [Who has that versions](#who-has-that-versions)
+
+<!-- vim-markdown-toc -->
+
 ### Requeriments:
 For install on Lubuntu 16.04 (has tmux 2.1) and above.
 - bash
