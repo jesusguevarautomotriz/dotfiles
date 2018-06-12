@@ -17,7 +17,7 @@ Aditional and detailled info about requermiments and configuration (TL;DR)
 
 #### Tmux (#tmux)
 * Config details, enabled options, tweaked settings      
-- [Increased scrollback buffer size](https://stackoverflow.com/questions/18760281/how-to-increase-scrollback-buffer-size-in-tmux)
+  - [Increased scrollback buffer size](https://stackoverflow.com/questions/18760281/how-to-increase-scrollback-buffer-size-in-tmux)
 
 * Tmux Plugin Manger (TPM)
   * Requeriments
