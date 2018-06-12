@@ -46,7 +46,7 @@ Aditional and detailled info about requermiments and configuration (TL;DR)
 
 * tmux-copycat: A plugin that enhances tmux search 
     * Config details, enabled options, tweaked settings
-    - `tmux.conf` file has been configured for manual installation of tmux-copycat plugin as required for tmux 2.3 and earlier versions (https://github.com/tmux-plugins/tmux-copycat/blob/master/docs/installation)_for_tmux_2.3.md for Lubuntu 16.04 (which has tmux 2.1.
+    - `tmux.conf` file has been configured for manual installation of tmux-copycat plugin as required for tmux 2.3 and earlier versions (https://github.com/tmux-plugins/tmux-copycat/blob/master/docs/installation_for_tmux_2.3.md) for Lubuntu 16.04 (which has tmux 2.1.
     - [Increased scrollback buffer size](#tmux)
 
 ### Who has that versions
