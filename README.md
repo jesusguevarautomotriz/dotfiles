@@ -30,18 +30,19 @@ Aditional and detailled info about requermiments and configuration (TL;DR)
     - bash
     - tmux 1.9 or higher
 
-Config details
-- [Restoring vim and neovim sessions](https://github.com/tmux-plugins/tmux-resurrect/blob/master/docs/restoring_vim_and_neovim_sessions.md)
-- [restoring pane contents](https://github.com/tmux-plugins/tmux-resurrect/blob/master/docs/restoring_pane_contents.md) (experimental)
+  * Config details
+    - [Restoring vim and neovim sessions](https://github.com/tmux-plugins/tmux-resurrect/blob/master/docs/restoring_vim_and_neovim_sessions.md)
+    - [restoring pane contents](https://github.com/tmux-plugins/tmux-resurrect/blob/master/docs/restoring_pane_contents.md) (experimental)
 
 - tmux-continuum - automatic restoring and continuous saving of tmux env
-- bash
--tmux 1.9 or higher,
-- tmux-resurrect plugin
+  * Requirements
+    - bash
+    -tmux 1.9 or higher,
+    - tmux-resurrect plugin
 
-Config details
-- [continuum status in tmux status line](https://github.com/tmux-plugins/tmux-continuum/blob/master/docs/continuum_status.md)
-- [Save interval](https://github.com/tmux-plugins/tmux-continuum/issues/24)
+  * Config details
+    - [continuum status in tmux status line](https://github.com/tmux-plugins/tmux-continuum/blob/master/docs/continuum_status.md)
+    - [Save interval](https://github.com/tmux-plugins/tmux-continuum/issues/24)
 
 * tmux-copycat: A plugin that enhances tmux search 
     * Config details, enabled options, tweaked settings
