@@ -7,6 +7,7 @@ Tested and working on Linux and Cygwin.
 <!-- vim-markdown-toc GFM -->
 
 * [Requeriments:](#requeriments)
+* [Quick Start](#quick-start)
 * [Installed plugins and config details](#installed-plugins-and-config-details)
     * [Tmux (#tmux)](#tmux-tmux)
         * [Installed plugins, Config details, enabled options, tweaked settings](#installed-plugins-config-details-enabled-options-tweaked-settings)
@@ -22,6 +23,14 @@ For install on Lubuntu 16.04 (has tmux 2.1) and above.
 
 For Lubuntu 14.04  (has tmux 1.8)
 Use branch lubuntu1404 wich uses Tundle as tmux plugin manager due tmux 1.9 requeriment
+
+### Quick Start
+
+1.- Introduction
+2.- Setup
+3.- Configure
+4.- Install
+5.- Optional
 
 ### Installed plugins and config details
 Aditional and detailled info about requermiments and configuration (TL;DR)    
