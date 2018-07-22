@@ -9,6 +9,7 @@ Tested and working on Linux and Cygwin.
 * [Requeriments:](#requeriments)
 * [Installed plugins and config details](#installed-plugins-and-config-details)
     * [Tmux (#tmux)](#tmux-tmux)
+        * [Installed plugins, Config details, enabled options, tweaked settings](#installed-plugins-config-details-enabled-options-tweaked-settings)
 * [Who has that versions](#who-has-that-versions)
 
 <!-- vim-markdown-toc -->
@@ -26,38 +27,43 @@ Use branch lubuntu1404 wich uses Tundle as tmux plugin manager due tmux 1.9 requ
 Aditional and detailled info about requermiments and configuration (TL;DR)    
 
 #### Tmux (#tmux)
-* Config details, enabled options, tweaked settings      
-  - [Increased scrollback buffer size](https://stackoverflow.com/questions/18760281/how-to-increase-scrollback-buffer-size-in-tmux)
+##### Installed plugins, Config details, enabled options, tweaked settings      
+* [Increased scrollback buffer size](https://stackoverflow.com/questions/18760281/how-to-increase-scrollback-buffer-size-in-tmux)
 
 * Tmux Plugin Manger (TPM)
-  * Requeriments
-    - Tmux resurrect - Restore tmux environment after system restart.
-    - bash
-    - tmux 1.9 or higher
+    * Requeriments
+        * Tmux version 1.9 (or higher)
+        * git
+        * bash
 
-* Tmux resurrect - Restore tmux environment after system restart.
-  * Requirements
-    - bash
-    - tmux 1.9 or higher
+    * Tmux resurrect - Restore tmux environment after system restart.
+        * Requeriments
+            *  bash
+            *  tmux 1.9 or higher
 
-  * Config details
-    - [Restoring vim and neovim sessions](https://github.com/tmux-plugins/tmux-resurrect/blob/master/docs/restoring_vim_and_neovim_sessions.md)
-    - [restoring pane contents](https://github.com/tmux-plugins/tmux-resurrect/blob/master/docs/restoring_pane_contents.md) (experimental)
+    * Tmux resurrect - Restore tmux environment after system restart.
+        * Requirements
+            * bash
+            * tmux 1.9 or higher
 
-- tmux-continuum - automatic restoring and continuous saving of tmux env
-  * Requirements
-    - bash
-    -tmux 1.9 or higher,
-    - tmux-resurrect plugin
+        * Config details
+            * [Restoring vim and neovim sessions](https://github.com/tmux-plugins/tmux-resurrect/blob/master/docs/restoring_vim_and_neovim_sessions.md)
+            * [restoring pane contents](https://github.com/tmux-plugins/tmux-resurrect/blob/master/docs/restoring_pane_contents.md) (experimental)
 
-  * Config details
-    - [continuum status in tmux status line](https://github.com/tmux-plugins/tmux-continuum/blob/master/docs/continuum_status.md)
-    - [Save interval](https://github.com/tmux-plugins/tmux-continuum/issues/24)
+    * tmux-continuum - automatic restoring and continuous saving of tmux env
+        * Requirements
+            * bash
+            * tmux 1.9 or higher,
+            * tmux-resurrect plugin
 
-* tmux-copycat: A plugin that enhances tmux search 
-    * Config details, enabled options, tweaked settings
-    - `tmux.conf` file has been configured for manual installation of tmux-copycat plugin as required for tmux 2.3 and earlier versions (https://github.com/tmux-plugins/tmux-copycat/blob/master/docs/installation_for_tmux_2.3.md) for Lubuntu 16.04 (which has tmux 2.1.
-    - [Increased scrollback buffer size](#tmux)
+        * Config details
+            * [continuum status in tmux status line](https://github.com/tmux-plugins/tmux-continuum/blob/master/docs/continuum_status.md)
+            * [Save interval](https://github.com/tmux-plugins/tmux-continuum/issues/24)
+
+    * tmux-copycat: A plugin that enhances tmux search 
+        * Config details, enabled options, tweaked settings
+            * `tmux.conf` file has been configured for manual installation of tmux-copycat plugin as required for tmux 2.3 and earlier versions (https://github.com/tmux-plugins/tmux-copycat/blob/master/docs/installation_for_tmux_2.3.md) for Lubuntu 16.04 (which has tmux 2.1.
+            * [Increased scrollback buffer size](#tmux)
 
 ### Who has that versions
 Lubuntu 14.04
