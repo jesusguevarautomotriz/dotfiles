@@ -19,7 +19,9 @@ shopt -s histappend
 HISTSIZE=100000
 HISTFILESIZE=200000
 
-# Opcion añadida por Jesus Guevara 24-03-2016
+# We want to have bash immediately add commands to our history instead of
+# waiting for the end of each session (to enable commands in one terminal
+# to be instantly be available in another
 export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
 
 # check the window size after each command and, if necessary,
@@ -87,6 +89,12 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
+<<<<<<< HEAD
+=======
+# colored GCC warnings and errors
+#export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
+
+>>>>>>> f965e9b6b10dcb8a34e1ce13f3a0c3d3fc6ca140
 # some more ls aliases
 alias ll='ls -alF'
 alias la='ls -A'
