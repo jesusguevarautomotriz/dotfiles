@@ -26,7 +26,7 @@ call plug#end()                " vim-plug required
 
 
 " Now we can turn our filetype functionality back on
-" filetype plugin indent on    " Vundle required
+filetype plugin indent on    " Vundle required
 
 " ================ General Config ====================
 set langmenu=en_US
