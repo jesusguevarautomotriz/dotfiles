@@ -3,36 +3,36 @@
 set nocompatible             " Disable vi compatibility
                              " be iMproved, Vundle  required
 
-filetype off                 " Vundle required
+" Specify a directory for plugins
+" " - For Neovim: stdpath('data') . '/plugged'
+" " - Avoid using standard Vim directory names like 'plugin'
+" " Make sure you use single quotes
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+call plug#begin('~/.vim/plugged')
+Plug 'bling/vim-airline'
+Plug 'ervandew/supertab'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-surround'
+Plug 'bronson/vim-crosshairs'
+Plug 'godlygeek/tabular'
+Plug 'plasticboy/vim-markdown'
+Plug 'mzlogin/vim-markdown-toc'
 
-Plugin 'gmarik/vundle'       " let Vundle manage Vundle, required
-Plugin 'bling/vim-airline'
-Plugin 'ervandew/supertab'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-surround'
-Plugin 'bronson/vim-crosshairs'
-Plugin 'godlygeek/tabular'
-Plugin 'plasticboy/vim-markdown'
-Plugin 'mzlogin/vim-markdown-toc'
-Plugin 'TextFormat'
-" Plugin 'mhinz/vim-startify'
-Plugin 'tpope/vim-obsession'
+" All of your Plugins must be added before the following line
+call plug#end()                " vim-plug required
 
 " Put your non-Plugin stuff after this line
 
-" All of your Plugins must be added before the following line
-call vundle#end()            " Vundle required
-
 
 " Now we can turn our filetype functionality back on
-filetype plugin indent on    " Vundle required
+" filetype plugin indent on    " Vundle required
 
 " ================ General Config ====================
+set langmenu=en_US
+let $LANG = 'en_US'
+source $VIMRUNTIME/delmenu.vim
+source $VIMRUNTIME/menu.vim
 
 "Turns on line numbering.
 :set number
@@ -43,10 +43,10 @@ set encoding=utf-8           " The encoding displayed
 set fileencoding=utf-8       " The encoding to file
 set t_Co=256
                              " Fuente de la interfaz grafica   
-set guifont=Monospace
+set guifont=Lucida\ Console
 
-"Wrap text after 78 characters
-set textwidth=78
+"Wrap text after 72 characters
+set textwidth=80
 
 " Column 80 marker
 highlight OverLength ctermbg=darkred ctermfg=white guibg=#660000
@@ -65,7 +65,7 @@ match OverLength /\%81v.\+/
 "text.  There are "actually two parts here.  "autocmd FileType text" is
 "an autocommand.  This "defines that when the file type is set to "text"
 "the following command is "automatically executed.  "setlocal
-"textwidth=80" sets the 'textwidth' optio"n to 80, but only locally in
+"textwidth=78" sets the 'textwidth' optio"n to 78, but only locally in
 ""one file.
 :autocmd FileType text setlocal textwidth=80
 
@@ -109,13 +109,6 @@ set tabstop=4
 set shiftwidth=4
 " On pressing tab, insert 4 spaces
 set expandtab
-
-" Opciones de correccion ortografica
-" set spelllang=es,en
-" set spell spelllang=en_us
-" set spell spelllang=es_es
-" setlocal spell spelllang=es_es
-" setlocal spell spelllang=en_en
 
 " -----------------------------------------------------------------------------
 " Plugins Configuration
@@ -166,4 +159,5 @@ let g:vim_markdown_folding_disabled = 1
 " Every level will instead cycle between the valid list item markers *, - and +:
 let g:vmt_cycle_list_item_markers = 0
 let g:vmt_auto_update_on_save = 1
+
 
