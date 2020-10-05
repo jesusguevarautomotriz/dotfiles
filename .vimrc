@@ -22,6 +22,8 @@ Plugin 'mzlogin/vim-markdown-toc'
 Plugin 'TextFormat'
 " Plugin 'mhinz/vim-startify'
 Plugin 'tpope/vim-obsession'
+Plugin 'LaTeX-Suite-aka-Vim-LaTeX'
+
 
 " Put your non-Plugin stuff after this line
 
@@ -96,10 +98,15 @@ set laststatus=2
 " make that backspace key work the way it should
 set backspace=indent,eol,start
 
+" show mapleader  in the bottom right hand corner of vim (to the left of the
+" cursor location)
+set showcmd
+
 " show the current mode
 set showmode
 
-" whitespace - Tab key == 4 spaces and auto-indent after curly braces in Vim - Stack Overflow
+" whitespace - Tab key == 4 spaces and auto-indent after curly braces in Vim -
+" Stack Overflow
 " http://stackoverflow.com/questions/234564/tab-key-4-spaces-and-auto-indent-after-curly-braces-in-vim
 " Fecha de consulta: mié 13 jul 2016 23:52:31 VET
 
