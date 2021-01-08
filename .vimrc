@@ -22,12 +22,12 @@ Plugin 'mzlogin/vim-markdown-toc'
 Plugin 'TextFormat'
 " Plugin 'mhinz/vim-startify'
 Plugin 'tpope/vim-obsession'
+" Plugin 'LaTeX-Suite-aka-Vim-LaTeX'
 
 " Put your non-Plugin stuff after this line
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " Vundle required
-
 
 " Now we can turn our filetype functionality back on
 filetype plugin indent on    " Vundle required
@@ -41,9 +41,14 @@ filetype plugin indent on    " Vundle required
 
 set encoding=utf-8           " The encoding displayed
 set fileencoding=utf-8       " The encoding to file
-set t_Co=256
-                             " Fuente de la interfaz grafica   
-set guifont=Monospace
+set t_Co=256                 " use 256 colors in vim
+
+if &term!="xterm"
+       set t_Co=256            " use 256 colors in vim
+          colorscheme desert256   " an appropriate color scheme
+      endif
+
+set guifont=Monospace        " Fuente de la interfaz grafica   
 
 "Wrap text after 78 characters
 set textwidth=78
@@ -96,10 +101,15 @@ set laststatus=2
 " make that backspace key work the way it should
 set backspace=indent,eol,start
 
+" show mapleader  in the bottom right hand corner of vim
+" (to the left of the " cursor location)
+set showcmd
+
 " show the current mode
 set showmode
 
-" whitespace - Tab key == 4 spaces and auto-indent after curly braces in Vim - Stack Overflow
+" whitespace - Tab key == 4 spaces and auto-indent after curly braces in Vim -
+" Stack Overflow
 " http://stackoverflow.com/questions/234564/tab-key-4-spaces-and-auto-indent-after-curly-braces-in-vim
 " Fecha de consulta: mié 13 jul 2016 23:52:31 VET
 
@@ -117,9 +127,9 @@ set expandtab
 " setlocal spell spelllang=es_es
 " setlocal spell spelllang=en_en
 
-" -----------------------------------------------------------------------------
+" ----------------------------------------------------------------------------
 " Plugins Configuration
-" -----------------------------------------------------------------------------
+" ----------------------------------------------------------------------------
 " vim-airline
   if !exists('g:airline_symbols')
     let g:airline_symbols = {}
@@ -166,4 +176,3 @@ let g:vim_markdown_folding_disabled = 1
 " Every level will instead cycle between the valid list item markers *, - and +:
 let g:vmt_cycle_list_item_markers = 0
 let g:vmt_auto_update_on_save = 1
-
