@@ -101,8 +101,8 @@ set laststatus=2
 " make that backspace key work the way it should
 set backspace=indent,eol,start
 
-" show mapleader  in the bottom right hand corner of vim
-" (to the left of the " cursor location)
+" show mapleader  in the bottom right hand corner of vim (to the left of the
+" cursor location)
 set showcmd
 
 " show the current mode
