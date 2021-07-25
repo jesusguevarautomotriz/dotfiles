@@ -21,7 +21,7 @@ Plugin 'plasticboy/vim-markdown'
 Plugin 'mzlogin/vim-markdown-toc'
 Plugin 'TextFormat'
 " Plugin 'mhinz/vim-startify'
-Plugin 'tpope/vim-obsession'
+" Plugin 'tpope/vim-obsession'
 " Plugin 'LaTeX-Suite-aka-Vim-LaTeX'
 
 " Put your non-Plugin stuff after this line
@@ -42,20 +42,20 @@ filetype plugin indent on    " Vundle required
 set encoding=utf-8           " The encoding displayed
 set fileencoding=utf-8       " The encoding to file
 set t_Co=256                 " use 256 colors in vim
-
-if &term!="xterm"
-       set t_Co=256            " use 256 colors in vim
-          colorscheme desert256   " an appropriate color scheme
-      endif
+colorscheme delek
+" if &term!="xterm"
+"        set t_Co=256            " use 256 colors in vim
+"           colorscheme torte   " an appropriate color scheme
+"       endif
 
 set guifont=Monospace        " Fuente de la interfaz grafica   
 
-"Wrap text after 78 characters
-set textwidth=78
-
+" Wrap text after 78 characters
+" set textwidth=78
+ 
 " Column 80 marker
-highlight OverLength ctermbg=darkred ctermfg=white guibg=#660000
-match OverLength /\%81v.\+/
+" highlight OverLength ctermbg=darkred ctermfg=white guibg=#660000
+" match OverLength /\%81v.\+/
 
 "Highlights searches
 :set hlsearch
@@ -72,7 +72,7 @@ match OverLength /\%81v.\+/
 "the following command is "automatically executed.  "setlocal
 "textwidth=80" sets the 'textwidth' optio"n to 80, but only locally in
 ""one file.
-:autocmd FileType text setlocal textwidth=80
+" :autocmd FileType text setlocal textwidth=80
 
 "When enabled, the ruler is displayed on the right side of the status
 "line at the bottom of the window. By default, it displays the line
@@ -174,5 +174,5 @@ let g:vim_markdown_no_extensions_in_markdown = 1
 let g:vim_markdown_folding_disabled = 1
 
 " Every level will instead cycle between the valid list item markers *, - and +:
-let g:vmt_cycle_list_item_markers = 0
+let g:vmt_cycle_list_item_markers = 1
 let g:vmt_auto_update_on_save = 1
